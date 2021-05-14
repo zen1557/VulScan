@@ -33,7 +33,7 @@ def main():
             print '[-] Usuage: ' + str(sys.argv[0]) + " <vuln filename>"
             exit(0)
         portlist = [21,22,23,25,80,110,443,445,543]
-        for x in range(129,134):  #You Can use range(1,255) or range(4,6) its only matter of your network ip range
+        for x in range(129,134): 
             ip  = "192.168.54." + str(x)
             for port in portlist:
                 banner = retBanner(ip,port)
